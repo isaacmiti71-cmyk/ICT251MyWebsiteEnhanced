@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devicewidth,
+initial-scale=1.0">
+<button type="button" id="themeToggle"aria-pressed="false">
+    switch to dack theme
+</button>
+<title>Isaac Miti | My Personal Website</title>
+<!-- Connect HTML to CSS -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- HEADER -->
+<header id="home">
+<h1>Welcome to My Personal Website</h1>
+<p>My name is Isaac Miti</p>
+</header>
+<!-- NAVIGATION -->
+<nav>
+<a href="#about">About Me</a>
+<a href="#hobbies">Hobbies</a>
+<a href="#learning">Learning Plan</a>
+<a href="#photos">My Photos</a>
+<a href="#media">My Media</a>
+<a href="#contact">Contact</a>
+</nav>
+<!-- MAIN CONTENT -->
+<main>
+<!-- ABOUT ME -->
+<section id="about" class="content-section">
+<h2>About Me</h2>
+<p>
+My name is Isaac Miti. I am a student at
+Mulungushi University studying Computer
+Science.
+I am interested in technology, programming,
+and learning how websites are developed.
+I am currently studying Web Technologies
+to improve my knowledge of HTML, CSS, and
+JavaScript. My goal is to become a skilled
+programmer and use technology to solve
+problems in our communities.
+</p>
+<p>
+</section>
+<!-- HOBBIES -->
+<section id="hobbies" class="content-section">
+<h2>My Hobbies</h2>
+<p>Here are my three favourite hobbies:</p>
+<ul>
+<li>Reading</li>
+<li>Football</li>
+<li>Listening to Music</li>
+</ul>
+</section>
+<!-- LEARNING PLAN -->
+<section id="learning-plan" class="content-section">
+<h2>My Learning Plan</h2>
+<p>
+These are the steps I will take to improve
+my web development skills:
+</p>
+<ol>
+<li>Learn HTML tags and webpage structure.</li>
+<li>Practise styling websites using CSS.</li>
+<li>Learn JavaScript and build interactive
+websites.</li>
+</ol>
+<h3>Weekly Web Learning Timetable</h3>
+<table>
+<caption>
+My Weekly Web Development Learning Plan
+</caption>
+<thead>
+<tr>
+<th>Day</th>
+<th>Topic</th>
+<th>Practice Task</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>HTML</td>
+<td>Create webpage structure</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>CSS</td>
+<td>Style a personal website</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>JavaScript</td>
+<td>Create a simple interactive button</td>
+</tr>
+</tbody>
+</table>
+</section>
+<!-- PHOTO GALLERY -->
+<section id="photos" class="content-section">
+<h2>My Photos</h2>
+<p>
+Welcome to my photo gallery.
+These pictures represent my interests
+and experiences.
+</p>
+<div class="gallery">
+<figure class="gallery-item">
+<img src="images/IMG-20251029-WA0052.jpg"
+alt="My first personal photograph">
+<figcaption>
+Photo 1: My personal photograph
+</figcaption>
+</figure>
+<figure class="gallery-item">
+<img src="images/20260324_114524.jpg"
+alt="A photograph of my hobby">
+<figcaption>
+Photo 2: One of my favourite hobbies
+</figcaption>
+</figure>
+<figure class="gallery-item">
+<img src="images/20250827_125322.jpg"
+alt="A photograph related to my studies">
+<figcaption>
+Photo 3: My student life
+</figcaption>
+</figure>
+</div>
+<div class="gallery-controls">
+<button type="button"
+id="previousPhoto">Previous Photo</button>
+<button type="button" id="nextPhoto">Next
+Photo</button>
+<p id="galleryStatus" aria-live="polite"></p>
+</div>
+</section>
+<!-- VIDEO AND AUDIO -->
+<section id="media" class="content-section">
+<h2>My Media</h2>
+<h3>My Introduction Video</h3>
+<p>
+In this video, I introduce myself,
+my programme, and the web development
+skills I hope to learn.
+</p>
+<video controls>
+<source src="videos/20260927_151253.mp4"
+type="video/mp4">
+Your browser does not support video playback.
+</video>
+<h4>Video Summary</h4>
+<p>
+My name is Isaac Miti. I am a Computer
+Science student at Mulungushi University.
+I hope to improve my HTML, CSS, and
+JavaScript skills.
+</p>
+<hr>
+<h3>My Audio Recording</h3>
+<p>
+This recording describes one of my
+hobbies and why I enjoy learning
+web technologies.
+</p>
+<audio controls>
+<source src="videos/MyFinalRecordings.m4a"
+type="audio/mpeg">
+Your browser does not support audio playback.
+</audio>
+<p>
+Audio description: A short recording
+about my hobbies and interests.
+</p>
+</section>
+<section id="projects">
+<h2>My Work</h2>
+<div class="project-search">
+<label for="projectSearch">Search my work:</
+label>
+<input
+type="search"
+id="projectSearch"
+placeholder="Search HTML, CSS, or other work..."
+>
+<button type="button" id="resetSearch">Reset
+search</button>
+<p id="searchMessage" aria-live="polite"></p>
+</div>
+<p>Here are some of the things I have learned and practised.</p>
+
+<article class="project-item">
+<h3>HTML</h3>
+<p>I use HTML to structure webpages and organise website content.</p>
+</article>
+
+<article class="project-item">
+<h3>CSS</h3>
+<p>I use CSS to style webpages with colours, layouts, and fonts.</p>
+</article>
+
+<article class="project-item">
+<h3>Web Technologies</h3>
+<p>I am learning to create responsive websites with images and media.</p>
+</article>
+</section>
+<!-- CONTACT FORM -->
+<section id="contact" class="content-section">
+<h2>Contact Me</h2>
+<p>
+Use the form below to write a message.
+</p>
+<form id="contactForm" action="#" method="get">
+<label for="name">Full Name:</label>
+<input type="text"
+id="contactName"
+name="name"
+placeholder="Enter your name"
+required>
+<label for="email">Email Address:</label>
+<input type="email"
+id="contactEmail"
+placeholder="Enter your email"
+required>
+<label for="topic">Topic:</label>
+<select id="topic" name="topic">
+<option value="">Select a topic</option>
+<option value="web">Web Development</option>
+<option value="education">Education</option>
+<option value="other">Other</option>
+</select>
+<label for="message">Your Message:</label>
+<textarea id="contactmessage"
+name="message"
+rows="5"
+placeholder="Write your message here"
+required></textarea>
+<button type="submit">
+Submit Message
+</button>
+<p id="formFeedback" aria-live="polite"></p>
+
+<div id="formPreview" hidden>
+<h3>Message Preview</h3>
+<p><strong>Name:</strong> <span id="previewName"></span></p>
+<p><strong>Email:</strong> <span id="previewEmail"></span></p>
+<p><strong>Message:</strong> <span id="previewMessage"></span></p>
+<p>Browser demonstration only — no message is sent.</p>
+</div>
+</form>
+<p class="notice">
+Note: This is a demonstration form.
+It does not send or store messages.
+</p>
+</section>
+</main>
+<!-- FOOTER -->
+<footer>
+<p>
+© 2026 Isaac Miti
+</p>
+<a href="#home">Back to Top</a>
+</footer>
+<script src="js/script.js"defer></script>
+</body>
+<script src="js/script.js"defer></script>
+</html>
