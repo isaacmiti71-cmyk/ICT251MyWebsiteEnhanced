@@ -47,5 +47,4 @@ Author
 Isaac Miti
 
 Live Website
-Add your published Render URL here after
-deployment.
+https://ict251mywebsiteenhanced.onrender.com/#home
